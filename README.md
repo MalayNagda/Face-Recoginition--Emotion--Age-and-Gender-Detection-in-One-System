@@ -27,6 +27,11 @@ the AI agent recognizes the person
   <p align="center">UDP Connection Result with another system</p>
 </p>
 
+<p align="center">
+  <img src="images/video_final_sys.gif">
+  <p align="center">Final system in action</p>
+</p>
+
 ## Authors
 * Abdul Mohd Wahab- face recognition and emotion detection models  
 * Amith Lawrence- face recognition and emotion detection models
