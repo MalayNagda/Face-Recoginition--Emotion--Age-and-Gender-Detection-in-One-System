@@ -28,7 +28,7 @@ the AI agent recognizes the person
 </p>
 
 <p align="center">
-  <img src="images/video_final_sys.gif">
+  <img src="images/vid_final_sys.gif">
   <p align="center">Final system in action</p>
 </p>
 
