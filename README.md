@@ -4,7 +4,9 @@ The objective of the project was to have face recoginition, emotion detection, a
 
 ## Getting Started
 We implemented the project on a Windows machine using Spyder IDE and TensorFlow 1.x. I have updated the code to be compatible with TensorFlow 2.0. 
+The code to run the system can be found in 'real_time_facial_recog_mini_xception.py'. 
 
+We used (this repository)[https://github.com/yu4u/age-gender-estimation] for age and gender estimation.
 <p align="center">
   <img src="images/system_flowchart.png">
   <p align="center"> Overview of how the entire system works.</p>
