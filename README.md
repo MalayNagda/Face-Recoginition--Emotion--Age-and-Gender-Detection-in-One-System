@@ -60,6 +60,9 @@ The name of the person, age and gender as estimated and the emotion detected is 
   <p align="center">Information sent via UDP Connection to another system</p>
 </p>
 
+## Limitations
+The resulting video feed is slow and lags quite a bit as there are three models running in the same program. The code could be optimized increase the speed of the system.
+
 ## Authors
 * Abdul Mohd Wahab- face recognition and emotion detection models  
 * Amith Lawrence- face recognition and emotion detection models
