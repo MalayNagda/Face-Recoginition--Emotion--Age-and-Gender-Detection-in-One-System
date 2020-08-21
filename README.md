@@ -1,11 +1,12 @@
 # Face Recoginition, Emotion, Age and Gender Detection in One System
  
-The objective of the project was to have face recoginition, emotion detection, age and gender estimation in one system. We first tested the three systems individually and then went forward to combine them. 
 
 <p align="center">
   <img src="images/vid_final_sys.gif">
   <p align="center">Final system in action</p>
 </p>
+
+The objective of the project was to have face recoginition, emotion detection, age and gender estimation in one system. We first tested the three systems individually and then went forward to combine them. 
 
 ## Flow Diagram of the Running System
 <p align="center">
@@ -25,7 +26,7 @@ Initially the project was implemented on TensorFlow 1.x. I have updated the code
 The code to run the system can be found in 'real_time_facial_recog_mini_xception.py'. 
 
 We have implemented face recoginition using One shot Learning and the related resources as provided in 'Convolutional Neural Networks' course by Deeplearning.ai on Coursera.
-For emotion detection, [https://arxiv.org/pdf/1710.07557.pdf](mini-Xception model) was trained but with datasets different from that mentioned in the paper.
+For emotion detection, [mini-Xception model](https://arxiv.org/pdf/1710.07557.pdf) was trained but with datasets different from that mentioned in the paper.
 
 We used a combination of 4 datasets for this purpose, of which two links are broken now. The other two are-
 * [The Japanese Female Facial Expression (JAFFE) Database](https://zenodo.org/record/3451524#.X0AJy8hKiUk)
