@@ -37,7 +37,7 @@ We used [this repository](https://github.com/yu4u/age-gender-estimation) for int
 
 ## Deployment
 Of the three distinct components, the code first tries to recognize the person (face) in front of the webcam. If it doesn't exist in the database of all the other faces, it will ask the person his/her name
-and store the correspinding image frame captured, so that it can recognize the same person, next time (s)he appears in front of the webcam. The output of this process is as shown below-
+and store the corresponding image frame captured, so that it can recognize the same person, next time (s)he appears in front of the webcam. The output of this process is as shown below-
 
 <p align="center">
   <img src="images/face_recog.png">
