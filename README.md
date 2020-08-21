@@ -48,6 +48,7 @@ the AI agent recognizes the person
 
 After recognizing the person, the age and gender are estimated followed by the emotion of the person being detected. This information is overlayed on the video stream from the webcam along with the probability of each emotion detected on that
 frame of image. The resulting output of this second and third component is-
+
 <p align="center">
   <img src="images/final_sys.png">
 <p align="center">Emotion, Age and Gender Detection</p>
