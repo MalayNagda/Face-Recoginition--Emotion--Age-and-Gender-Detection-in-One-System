@@ -64,7 +64,7 @@ The name of the person, age and gender as estimated and the emotion detected is 
 * Abdul Mohd Wahab- face recognition and emotion detection models  
 * Amith Lawrence- face recognition and emotion detection models
 * Anusha Vaidya- age and gender estimation model, UDP communication
-* Malay Nagda- age and gender estimation model, UDP communication and combining the three systems
+* Malay Nagda- age and gender estimation model, UDP communication and combining of the three systems
 * Shivani Shah- literature review, code debugging, protyping and final face recognition and emotion detection models
 
 ## Acknowledgements
