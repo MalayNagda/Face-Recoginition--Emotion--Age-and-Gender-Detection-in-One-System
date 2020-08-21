@@ -2,11 +2,16 @@
  
 The objective of the project was to have face recoginition, emotion detection, age and gender estimation in one system. We first tested the three systems individually and then went forward to combine them. 
 
-## Getting Started
-We implemented the project on a Windows machine using Spyder IDE and TensorFlow 1.x. I have updated the code to be compatible with TensorFlow 2.0. 
+## Dependencies
+* Python 3.7.x
+Tested on
+* Windows 10 Home, Python 3.7.5, TensorFlow 2.1.0
+
+Initially the project was implemented on TensorFlow 1.x. I have updated the code to be compatible with TensorFlow 2.0. 
+
 The code to run the system can be found in 'real_time_facial_recog_mini_xception.py'. 
 
-We used [this repository](https://github.com/yu4u/age-gender-estimation) for age and gender estimation.
+We used [this repository](https://github.com/yu4u/age-gender-estimation) for integrating age and gender estimation within our project. 
 <p align="center">
   <img src="images/system_flowchart.png">
   <p align="center"> Overview of how the entire system works.</p>
