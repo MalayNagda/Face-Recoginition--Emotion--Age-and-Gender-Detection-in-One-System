@@ -6,7 +6,7 @@
   <p align="center">Final system in action</p>
 </p>
 
-The objective of the project was to have face recoginition, emotion detection, age and gender estimation in one system. We first tested the three systems individually and then went forward to combine them. 
+The objective of the project was to have face recognition, emotion detection, age and gender estimation in one system. We first tested the three systems individually and then went forward to combine them. 
 
 ## Flow Diagram of the Running System
 <p align="center">
