@@ -26,6 +26,7 @@ Initially the project was implemented on TensorFlow 1.x. I have updated the code
 The code to run the system can be found in 'real_time_facial_recog_mini_xception.py'. 
 
 We have implemented face recoginition using One shot Learning and the related resources as provided in 'Convolutional Neural Networks' course by Deeplearning.ai on Coursera.
+
 For emotion detection, [mini-Xception model](https://arxiv.org/pdf/1710.07557.pdf) was trained but with datasets different from that mentioned in the paper.
 
 We used a combination of 4 datasets for this purpose, of which two links are broken now. The other two are-
@@ -34,6 +35,10 @@ We used a combination of 4 datasets for this purpose, of which two links are bro
 
 We used [this repository](https://github.com/yu4u/age-gender-estimation) for integrating age and gender estimation within our project. 
 
+## Deployment
+Of the three distinct components, the code first tries to recognize the person (face) in front of the webcam. If it doesn't exist in the database of all the other faces, it will ask the person his/her name
+and store the correspinding image frame captured, so that it can recognize the same person, next time (s)he appears in front of the webcam. The output of this process is as shown below-
+
 <p align="center">
   <img src="images/face_recog.png">
   <p align="center">One-shot Learning. a) Face of the person captured. b) Person is not in the system. c) Person stored in the database. d) Person re-appears in front of the camera and
@@ -41,14 +46,17 @@ the AI agent recognizes the person
 .</p>
 </p>
 
+After recognizing the person, the age and gender are estimated followed by the emotion of the person being detected. This information is overlayed on the video stream from the webcam along with the probability of each emotion detected on that
+frame of image. The resulting output of this second and third component is-
 <p align="center">
   <img src="images/final_sys.png">
 <p align="center">Emotion, Age and Gender Detection</p>
 </p>
 
+The name of the person, age and gender as estimated and the emotion detected is sent via UDP to another system that tries to converse meaningfully with the person in front of the webcam based on the information sent.
 <p align="center">
   <img src="images/UDP.png">
-  <p align="center">UDP Connection Result with another system</p>
+  <p align="center">Information sent via UDP Connection to another system</p>
 </p>
 
 ## Authors
