@@ -8,6 +8,16 @@
 
 The objective of the project was to have face recognition, emotion detection, age and gender estimation in one system. We first tested the three systems individually and then went forward to combine them. 
 
+We have implemented face recoginition using One shot Learning and the related resources as provided in 'Convolutional Neural Networks' course by Deeplearning.ai on Coursera.
+
+For emotion detection, [mini-Xception model](https://arxiv.org/pdf/1710.07557.pdf) was trained but with datasets different from that mentioned in the paper.
+
+We used a combination of 4 datasets for this purpose, of which two links are broken now. The other two are-
+* [The Japanese Female Facial Expression (JAFFE) Database](https://zenodo.org/record/3451524#.X0AJy8hKiUk)
+* [FacesDB](http://app.visgraf.impa.br/database/faces/)
+
+We used [this repository](https://github.com/yu4u/age-gender-estimation) for integrating age and gender estimation within our project. 
+
 ## Flow Diagram of the Running System
 <p align="center">
   <img src="images/system_flowchart.png">
@@ -22,20 +32,9 @@ Tested on
 
 Initially the project was implemented on TensorFlow 1.x. I have updated the code to be compatible with TensorFlow 2.0. 
 
-## Usage
-The code to run the system can be found in 'real_time_facial_recog_mini_xception.py' within the 'face-recognition-age-gender-emotion-estimation/' folder. 
-
-We have implemented face recoginition using One shot Learning and the related resources as provided in 'Convolutional Neural Networks' course by Deeplearning.ai on Coursera.
-
-For emotion detection, [mini-Xception model](https://arxiv.org/pdf/1710.07557.pdf) was trained but with datasets different from that mentioned in the paper.
-
-We used a combination of 4 datasets for this purpose, of which two links are broken now. The other two are-
-* [The Japanese Female Facial Expression (JAFFE) Database](https://zenodo.org/record/3451524#.X0AJy8hKiUk)
-* [FacesDB](http://app.visgraf.impa.br/database/faces/)
-
-We used [this repository](https://github.com/yu4u/age-gender-estimation) for integrating age and gender estimation within our project. 
-
 ## Deployment
+The code to run the system can be found in ./face-recognition-age-gender-emotion-estimation/real_time_facial_recog_mini_xception.py. 
+
 Of the three distinct components, the code first tries to recognize the person (face) in front of the webcam. If it doesn't exist in the database of all the other faces, it will ask the person his/her name
 and store the corresponding image frame captured, so that it can recognize the same person, next time (s)he appears in front of the webcam. The output of this process is as shown below-
 
